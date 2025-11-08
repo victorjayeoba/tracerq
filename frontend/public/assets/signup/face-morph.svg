@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+  <!-- Face outline -->
+  <ellipse cx="120" cy="120" rx="90" ry="110" fill="none" stroke="#a16207" stroke-width="2"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="90" cy="90" rx="12" ry="10" fill="none" stroke="#a16207" stroke-width="2"/>
+  <ellipse cx="150" cy="90" rx="12" ry="10" fill="none" stroke="#a16207" stroke-width="2"/>
+  
+  <!-- Nose -->
+  <path d="M120 100 L120 140 Q110 150 120 155 L120 155" fill="none" stroke="#a16207" stroke-width="2"/>
+  
+  <!-- Mouth -->
+  <path d="M90 170 Q120 190 150 170" fill="none" stroke="#a16207" stroke-width="2"/>
+  
+  <!-- Measurement points and lines -->
+  <circle cx="90" cy="90" r="3" fill="#a16207"/>
+  <circle cx="150" cy="90" r="3" fill="#a16207"/>
+  <circle cx="120" cy="155" r="3" fill="#a16207"/>
+  <circle cx="90" cy="170" r="3" fill="#a16207"/>
+  <circle cx="150" cy="170" r="3" fill="#a16207"/>
+  
+  <line x1="90" y1="90" x2="150" y2="90" stroke="#a16207" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="120" y1="30" x2="120" y2="210" stroke="#a16207" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="120" y1="155" x2="90" y2="170" stroke="#a16207" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="120" y1="155" x2="150" y2="170" stroke="#a16207" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>
+
+
+

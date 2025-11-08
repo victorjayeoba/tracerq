@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <style>
+      .brand { font-family: "Montserrat", Arial, sans-serif; font-weight: 700; fill: #92400e; }
+      .regular { font-family: "Montserrat", Arial, sans-serif; font-weight: 600; fill: #92400e; }
+      .lens { stroke: #92400e; stroke-width: 22; fill: none; stroke-linecap: round; }
+    </style>
+  </defs>
+
+  <!-- text: tЯace -->
+  <text class="brand" x="40" y="260" font-size="220">t</text>
+  <!-- mirrored/ Cyrillic R -->
+  <text class="brand" x="135" y="260" font-size="220">Я</text>
+  <text class="regular" x="295" y="260" font-size="220">ace</text>
+
+  <!-- magnifying glass (circle = lens) placed after the 'e' -->
+  <circle class="lens" cx="745" cy="200" r="72" />
+
+  <!-- small lowercase r inside the lens -->
+  <text x="745" y="208" font-size="190" font-family="Montserrat, Arial, sans-serif" font-weight="600" text-anchor="middle" dominant-baseline="middle" fill="#92400e">r</text>
+
+  <!-- handle of magnifying glass -->
+  <rect x="830" y="380" width="100" height="28" rx="10" transform="rotate(40 1000 252)" fill="#92400e" />
+</svg>

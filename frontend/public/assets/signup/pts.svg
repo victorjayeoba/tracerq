@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#a16207">
+    <circle cx="10" cy="10" r="2"/>
+    <circle cx="25" cy="10" r="2"/>
+    <circle cx="40" cy="10" r="2"/>
+    <circle cx="55" cy="10" r="2"/>
+    <circle cx="70" cy="10" r="2"/>
+    
+    <circle cx="10" cy="25" r="2"/>
+    <circle cx="25" cy="25" r="2"/>
+    <circle cx="40" cy="25" r="2"/>
+    <circle cx="55" cy="25" r="2"/>
+    <circle cx="70" cy="25" r="2"/>
+    
+    <circle cx="10" cy="40" r="2"/>
+    <circle cx="25" cy="40" r="2"/>
+    <circle cx="40" cy="40" r="2"/>
+    <circle cx="55" cy="40" r="2"/>
+    <circle cx="70" cy="40" r="2"/>
+    
+    <circle cx="10" cy="55" r="2"/>
+    <circle cx="25" cy="55" r="2"/>
+    <circle cx="40" cy="55" r="2"/>
+    <circle cx="55" cy="55" r="2"/>
+    <circle cx="70" cy="55" r="2"/>
+    
+    <circle cx="10" cy="70" r="2"/>
+    <circle cx="25" cy="70" r="2"/>
+    <circle cx="40" cy="70" r="2"/>
+    <circle cx="55" cy="70" r="2"/>
+    <circle cx="70" cy="70" r="2"/>
+  </g>
+</svg>
+
+
+

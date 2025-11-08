@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="150" cy="150" r="140" fill="none" stroke="#a16207" stroke-width="2" stroke-dasharray="10, 5"/>
+  <circle cx="150" cy="150" r="145" fill="none" stroke="rgba(161, 98, 7, 0.3)" stroke-width="1"/>
+  <circle cx="150" cy="150" r="135" fill="none" stroke="rgba(161, 98, 7, 0.3)" stroke-width="1"/>
+  <!-- Scan line animation -->
+  <line x1="10" y1="150" x2="290" y2="150" stroke="#a16207" stroke-width="2"/>
+  <circle cx="150" cy="10" r="5" fill="#a16207"/>
+  <circle cx="150" cy="290" r="5" fill="#a16207"/>
+  <circle cx="10" cy="150" r="5" fill="#a16207"/>
+  <circle cx="290" cy="150" r="5" fill="#a16207"/>
+</svg>
+
+
+
