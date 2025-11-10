@@ -55,9 +55,7 @@ The Next.js app (`frontend/app`) provides:
 
 ### AI in Our Process
 - Cursor: Assisted daily with boilerplate generation, rapid refactors, and repo-wide navigation.
-- GitHub Copilot: Provided inline completions for PyTorch modules, FastAPI endpoints, and repetitive TypeScript props.
 - ChatGPT (GPT-5 Codex): Helped design the ensemble architecture, debug device-placement bugs, and summarize research for documentation.
-- Gemini: Supplied lightweight planning checklists, backlog grooming suggestions, and inspiration for UX copy.
 
 ### Impact on Workflow
 - **Faster prototyping** – Cursor + Copilot produced initial model wrappers (`FaceForensicsModel`, `DFDCModel`, `CelebDFModel`) and inference scaffolding so we could focus on training IDs and evaluation.
