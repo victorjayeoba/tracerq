@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { CheckCircle, Shield, Zap, Eye, Globe, Lock, TrendingUp } from "lucide-react"
+import { CheckCircle, Shield, Zap, Eye, Globe, Lock, TrendingUp, Search, FileText, FileCheck } from "lucide-react"
 import ScrollTriggeredSteps from "@/components/scroll-triggered-steps"
 import CardSwap, { Card as SwapCard } from "@/components/card-swap"
 import StickyNav from "@/components/sticky-nav"
@@ -42,21 +42,18 @@ export default function HomePage() {
           />
 
           {/* Hero Content */}
-          <div className="relative z-10 py-16 px-4">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-8 text-center lg:text-left">
-                <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground leading-[0.95]">
+          <div className="relative z-10 pt-24 pb-16 px-4">
+            <div className="max-w-7xl mx-auto flex flex-col gap-12 items-center">
+              <div className="space-y-8 text-center w-full">
+                <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground leading-tight">
                   Protect Your <span className="text-accent">Online Legacy</span> from Deepfake Threats
                 </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl">
-                 <img src="/tracer-logo.svg" alt="tЯacer" className="inline h-7" />helps you quickly verify content authenticity, protecting you from deepfakes and false media.
 
-                </p>
-                <div className="text-xl font-semibold text-accent italic">"Before you believe it, check it."</div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <div className="text-2xl sm:text-3xl font-bold text-accent italic">"Before you believe it, check it."</div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                   <Button 
                     size="lg" 
-                    className="bg-accent text-accent-foreground hover:bg-accent/90"
+                    className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6"
                     onClick={handleSignup}
                   >
                     Try Free Demo
@@ -64,36 +61,83 @@ export default function HomePage() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent"
+                    className="border-accent text-accent hover:bg-accent hover:text-accent-foreground bg-transparent text-lg px-8 py-6"
                     onClick={handleSignup}
                   >
                     Learn More
                   </Button>
                 </div>
-                <div className="flex justify-center lg:justify-start space-x-6 pt-8">
+                <div className="flex justify-center space-x-6 pt-8">
                   <div className="flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-accent" />
-                    <span className="text-sm text-muted-foreground">85%+ Accuracy</span>
+                    <CheckCircle className="w-6 h-6 text-accent" />
+                    <span className="text-base font-semibold text-foreground">85%+ Accuracy</span>
                   </div>
                   <div className="flex items-center space-x-2">
-                    <Zap className="w-5 h-5 text-accent" />
-                    <span className="text-sm text-muted-foreground">Under 60 Seconds</span>
+                    <Zap className="w-6 h-6 text-accent" />
+                    <span className="text-base font-semibold text-foreground">Under 60 Seconds</span>
                   </div>
                 </div>
               </div>
 
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative">
+              <div className="flex justify-center w-full mt-8">
+                <div className="relative w-full max-w-4xl">
                   <video
                     src="/hero-video.mp4"
-                    className="w-full h-auto max-w-lg rounded-lg shadow-2xl border border-border"
+                    className="w-full h-auto rounded-lg shadow-2xl border border-border"
                     autoPlay
                     loop
                     muted
                     playsInline
                   />
-                  <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute -top-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-full text-base font-bold">
                     Live Demo
+                  </div>
+                </div>
+              </div>
+
+              {/* World Statistics Section */}
+              <div className="w-full max-w-5xl mx-auto mt-12">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl border border-stone-200 p-8 shadow-lg">
+                  <h3 className="text-xl font-bold text-foreground mb-2 text-center">
+                    Recent & Reliable Deepfake Data
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">98%</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        of deepfake videos tracked are non-consensual pornography (Security Heroes, 2023)
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">$450K</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        average organizational loss from deepfake fraud per incident (Regula, 2024)
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">$40B</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        projected AI-enabled fraud losses in U.S. by 2027, up from $12.3B in 2023 (Deloitte)
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">$603K</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        average loss per deepfake incident in financial services sector (Regula, 2024)
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">73%</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        accuracy rate for humans detecting fake speech - meaning detection is unreliable
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-accent mb-2">10%</div>
+                      <p className="text-sm text-muted-foreground font-medium">
+                        of organizations reported losses exceeding $1 million from deepfake fraud
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -151,101 +195,59 @@ export default function HomePage() {
       </section>
 
       {/* Complete Deepfake Detection Solution */}
-      <section id="solutions" className="py-16 px-4 relative">
-        {/* Background SVG */}
-        <div className="absolute inset-0 w-full h-full">
-          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsSvgjs="http://svgjs.dev/svgjs" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1440 560" className="w-full h-full">
-            <g mask="url(&quot;#SvgjsMask1001&quot;)" fill="none">
-              <rect width="1440" height="560" x="0" y="0" fill="rgba(120, 66, 18, 1)"></rect>
-              <path d="M0,465.83C104.288,468.484,215.426,527.818,306.431,476.816C397.722,425.654,432.004,310.53,457.992,209.158C481.096,119.036,455.997,28.401,445.077,-63.992C433.839,-159.075,456.04,-268.473,393.019,-340.553C330.02,-412.607,220.396,-413.407,125.96,-428.979C41.682,-442.876,-42.324,-447.134,-125.08,-425.982C-210.099,-404.251,-286.444,-362.878,-353.608,-306.403C-430.372,-241.855,-509.614,-173.318,-539.442,-77.56C-571.521,25.426,-567.834,140.741,-523.522,239.085C-479.112,337.647,-395.768,418.504,-296.568,461.469C-203.969,501.575,-100.878,463.262,0,465.83" fill="#60350e"></path>
-              <path d="M1440 908.47C1502.761 894.712 1552.872 854.386 1605.549 817.5989999999999 1656.1390000000001 782.27 1709.73 750.559 1741.699 697.781 1776.088 641.008 1797.69 575.506 1792.2649999999999 509.352 1786.666 441.074 1754.586 378.024 1711.133 325.062 1666.877 271.121 1608.195 233.358 1543.795 206.50799999999998 1473.331 177.12900000000002 1397.019 142.65699999999998 1323.569 163.474 1249.969 184.334 1203.1779999999999 253.93599999999998 1158.179 315.8 1116.272 373.413 1079.963 436.356 1073.476 507.302 1067.166 576.305 1098.461 640.002 1122.595 704.954 1148.658 775.1 1157.164 861.688 1220.159 902.0799999999999 1283.15 942.469 1366.909 924.492 1440 908.47" fill="#904f16"></path>
-            </g>
-            <defs>
-              <mask id="SvgjsMask1001">
-                <rect width="1440" height="560" fill="#ffffff"></rect>
-              </mask>
-            </defs>
-          </svg>
-        </div>
-        
-        <div className="max-w-7xl mx-auto text-center relative z-10">
-          <h2 className="text-3xl font-bold text-white mb-4 drop-shadow-lg">Complete Online Legacy Protection Solution</h2>
-          {/* <p className="text-muted-foreground mb-12 max-w-3xl mx-auto">
-            <img src="/tracer-logo.svg" alt="tЯacer" className="inline h-7" /> detects deepfake videos, AI-generated images, and fabricated evidence. Upload or link content to
-            check authenticity before sharing and protect your digital reputation.
-          </p> */}
+      <section id="solutions" className="py-20 px-4 bg-gradient-to-b from-stone-50 to-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
+              Complete Online Legacy Protection Solution
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+              Comprehensive tools to verify content authenticity and protect your digital reputation
+            </p>
+          </div>
+          
           <div className="grid gap-8 md:grid-cols-3">
-            <Card className="group relative h-64 overflow-hidden border-border hover:shadow-xl transition-all duration-500 cursor-pointer">
-              <div 
-                className="absolute inset-0 bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-120"
-                style={{ backgroundImage: 'url(/analysis.png)' }}
-              ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#744a12]/95 via-[#744a12]/40 to-transparent"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-bold text-white mb-3 transition-all duration-500 group-hover:mb-4 drop-shadow-2xl">
+            <Card className="bg-white border-2 border-stone-200 hover:border-accent hover:shadow-2xl transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                  <Search className="w-8 h-8 text-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
                   Forensic Analysis
                 </h3>
-                <div className="overflow-hidden">
-                  <p className="text-white text-base font-medium transform translate-y-8 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-lg">
-                    Frame-by-frame analysis, audio-visual mismatch detection, and metadata checking to flag manipulated media.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="group relative h-64 overflow-hidden border-border hover:shadow-xl transition-all duration-500 cursor-pointer">
-              <div 
-                className="absolute inset-0 bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-120"
-                style={{ backgroundImage: 'url(/source.png)' }}
-              ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#744a12]/95 via-[#744a12]/40 to-transparent"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-bold text-white mb-3 transition-all duration-500 group-hover:mb-4 drop-shadow-2xl">
-                  Source Tracking
-                </h3>
-                <div className="overflow-hidden">
-                  <p className="text-white text-base font-medium transform translate-y-8 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-lg">
-                    Track where deepfake content first appeared online, identify perpetuators, and gather evidence for accountability.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            <Card className="group relative h-64 overflow-hidden border-border hover:shadow-xl transition-all duration-500 cursor-pointer">
-              <div 
-                className="absolute inset-0 bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-120"
-                style={{ backgroundImage: 'url(/report.png)' }}
-              ></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#744a12]/95 via-[#744a12]/40 to-transparent"></div>
-              
-              {/* Content */}
-              <div className="relative z-10 h-full flex flex-col justify-end p-6">
-                <h3 className="text-2xl font-bold text-white mb-3 transition-all duration-500 group-hover:mb-4 drop-shadow-2xl">
-                  Credibility Reports
-                </h3>
-                <div className="overflow-hidden">
-                  <p className="text-white text-base font-medium transform translate-y-8 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 drop-shadow-lg">
-                    Generate shareable PDF reports or links showing verification results with detailed credibility scores.
-                  </p>
-                </div>
-              </div>
-            </Card>
-
-            {/* <Card className="bg-card border-border hover:shadow-lg transition-shadow">
-              <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Zap className="w-6 h-6 text-accent" />
-                </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Browser Plugin & API</h3>
-                <p className="text-muted-foreground">
-                  Seamless integration for newsrooms and platforms to run checks without leaving their workflow.
+                <p className="text-muted-foreground leading-relaxed">
+                  Frame-by-frame analysis, audio-visual mismatch detection, and metadata checking to flag manipulated media.
                 </p>
               </CardContent>
-            </Card> */}
+            </Card>
+
+            <Card className="bg-white border-2 border-stone-200 hover:border-accent hover:shadow-2xl transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                  <FileText className="w-8 h-8 text-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Source Tracking
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Track where deepfake content first appeared online, identify perpetuators, and gather evidence for accountability.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border-2 border-stone-200 hover:border-accent hover:shadow-2xl transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="w-16 h-16 bg-accent/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                  <FileCheck className="w-8 h-8 text-accent" strokeWidth={2.5} />
+                </div>
+                <h3 className="text-2xl font-bold text-foreground mb-4">
+                  Credibility Reports
+                </h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  Generate shareable PDF reports or links showing verification results with detailed credibility scores.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
