@@ -69,7 +69,7 @@ export default function FileUploadArea({
         status: "analyzing"
       };
       
-      // Create preview for images and videos
+      // Create preview for images and videoss
       if (file.type.startsWith('image/') || file.type.startsWith('video/')) {
         fileObj.preview = URL.createObjectURL(file);
       }
